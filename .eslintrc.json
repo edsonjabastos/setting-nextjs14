@@ -14,6 +14,7 @@
     "plugin:@typescript-eslint/recommended",
     "plugin:react/recommended",
     "plugin:react-hooks/recommended",
+    "plugin:@next/next/recommended",
     "plugin:prettier/recommended"
   ],
   "parser": "@typescript-eslint/parser",
@@ -26,14 +27,7 @@
     "react-hooks/rules-of-hooks": "error",
     "react-hooks/exhaustive-deps": "warn",
     "react/prop-types": "off",
-    "react/react-in-jsx-scope": "off"
-  },
-  "overrides": [
-    {
-      "files": ["**/*.spec.ts", "**/*.spec.tsx"],
-      "env": {
-        "jest": true
-      }
-    }
-  ]
+    "react/react-in-jsx-scope": "off",
+    "prettier/prettier": ["error", { "endOfLine": "auto" }]
+  }
 }
